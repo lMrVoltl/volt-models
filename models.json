@@ -1,0 +1,28 @@
+{
+  "brand": "VOLTAGE",
+  "updated_at": "2026-11-14",
+  "models": [
+    {
+      "id": "volt-photon-2.5.1",
+      "name": "Volt Photon 2.5.1",
+      "tier": "light",
+      "params": "0.5B",
+      "quant": "Q5_K_M",
+      "size_mb": 498,
+      "min_free_ram_mb": 1200,
+      "description": "Мгновенный отклик и минимальный нагрев. Оптимально при нехватке RAM.",
+      "download_url": "https://github.com/lMrVoltl/volt-models/releases/download/v2.5.1/volt-photon-2.5.1.gguf"
+    },
+    {
+      "id": "volt-plasma-2.5.1",
+      "name": "Volt Plasma 2.5.1",
+      "tier": "heavy",
+      "params": "1.5B",
+      "quant": "Q5_K_M",
+      "size_mb": 1228,
+      "min_free_ram_mb": 2600,
+      "description": "Основная рабочая модель: глубокие ответы, код и логика.",
+      "download_url": "https://github.com/lMrVoltl/volt-models/releases/download/v2.5.1/volt-plasma-2.5.1.gguf"
+    }
+  ]
+}
