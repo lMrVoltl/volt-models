@@ -1,28 +1,44 @@
 {
   "brand": "VOLTAGE",
-  "updated_at": "2026-11-14",
   "models": [
     {
-      "id": "volt-photon-2.5.1",
-      "name": "Volt Photon 2.5.1",
-      "tier": "light",
-      "params": "0.5B",
-      "quant": "Q5_K_M",
-      "size_mb": 498,
-      "min_free_ram_mb": 1200,
-      "description": "Мгновенный отклик и минимальный нагрев. Оптимально при нехватке RAM.",
-      "download_url": "https://github.com/lMrVoltl/volt-models/releases/download/v2.5.1/volt-photon-2.5.1.gguf"
+      "id": "volt-ion-2.5",
+      "name": "Volt Ion v2.5",
+      "tier": "Базовая быстрая модель (аналог Flash)",
+      "base_model": "Qwen 2.5 1.5B Instruct (GGUF Q5_K_M)",
+      "params": "1.5B Fast",
+      "size_mb": 1228,
+      "min_free_ram_mb": 1800,
+      "vision": false,
+      "description": "Быстрая модель на базе Qwen 2.5 1.5B для повседневных задач, текста и кода. Без распознавания фото.",
+      "download_url": "https://github.com/lMrVoltl/volt-models/releases/download/v2.5.1/volt-plasma-2.5.1.gguf",
+      "mmproj_url": ""
     },
     {
-      "id": "volt-plasma-2.5.1",
-      "name": "Volt Plasma 2.5.1",
-      "tier": "heavy",
-      "params": "1.5B",
-      "quant": "Q5_K_M",
-      "size_mb": 1228,
-      "min_free_ram_mb": 2600,
-      "description": "Основная рабочая модель: глубокие ответы, код и логика.",
-      "download_url": "https://github.com/lMrVoltl/volt-models/releases/download/v2.5.1/volt-plasma-2.5.1.gguf"
+      "id": "volt-photon-2.0",
+      "name": "Volt Photon v2.0",
+      "tier": "Субфлагман с поддержкой изображений",
+      "base_model": "Qwen2-VL 2B Instruct (GGUF Q4_K_M + mmproj FP16)",
+      "params": "2B Vision",
+      "size_mb": 1570,
+      "min_free_ram_mb": 2500,
+      "vision": true,
+      "description": "Субфлагман на базе Qwen2-VL 2B: уровень Qwen 2.5 с полноценным анализом фото и файлов.",
+      "download_url": "https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/resolve/main/Qwen2-VL-2B-Instruct-Q4_K_M.gguf",
+      "mmproj_url": "https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/resolve/main/mmproj-Qwen2-VL-2B-Instruct-f16.gguf"
+    },
+    {
+      "id": "volt-plasma-2.5",
+      "name": "Volt Plasma v2.5",
+      "tier": "Флагман линейки Volt AI",
+      "base_model": "Qwen2.5-VL 3B Instruct (GGUF Q4_K_M + mmproj Q8_0)",
+      "params": "3B Vision",
+      "size_mb": 2375,
+      "min_free_ram_mb": 3100,
+      "vision": true,
+      "description": "Флагман на базе Qwen2.5-VL 3B: глубокая логика, сложный код, анализ фото и документов.",
+      "download_url": "https://huggingface.co/ggml-org/Qwen2.5-VL-3B-Instruct-GGUF/resolve/main/Qwen2.5-VL-3B-Instruct-Q4_K_M.gguf",
+      "mmproj_url": "https://huggingface.co/ggml-org/Qwen2.5-VL-3B-Instruct-GGUF/resolve/main/mmproj-Qwen2.5-VL-3B-Instruct-Q8_0.gguf"
     }
   ]
 }
